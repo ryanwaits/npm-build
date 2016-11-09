@@ -1,0 +1,36 @@
+// variables
+$legitness: #e74c3c;
+
+// mixins
+@mixin standard-nav-padding($number) {
+  padding: $number;
+}
+
+// functions
+
+@function calc-percent($target, $container) {
+  @return ($target/$container) * 100%;
+}
+
+body {
+  margin: 0;
+  background-color: $legitness;
+  font-family: 'Open Sans'; font-weight: 200;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.25em;
+}
+h1 {
+      color: #fff;
+}
+.container {
+  width: calc-percent(650px, 1000px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  nav {
+    @include standard-nav-padding(2.5%);
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "npm-build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css",
+    "autoprefix": "./bin/autoprefix",
+    "serve": "browser-sync start -s -f public/css/*.css, public/js/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.5.2",
+    "browser-sync": "^2.17.5",
+    "node-sass": "^3.11.2",
+    "nodemon": "^1.11.0",
+    "postcss-cli": "^2.6.0"
+  }
+}

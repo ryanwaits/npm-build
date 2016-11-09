@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background-color: #e74c3c;
+  font-family: 'Open Sans';
+  font-weight: 200; }
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.25em; }
+
+h1 {
+  color: #fff; }
+
+.container {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container nav {
+    padding: 2.5%; }
